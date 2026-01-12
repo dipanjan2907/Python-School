@@ -1,0 +1,3 @@
+This is a simple text file with several words. 
+Some of these words are longer than five characters, such as elephant, computer, and programming. Others are short like cat, dog, and cup. 
+Let's check if the program can pick out the long words.

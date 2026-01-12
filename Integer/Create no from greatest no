@@ -1,0 +1,22 @@
+print("Enter 0 to stop input.")
+n,n1=1,0
+l1=[]
+while True:
+    n=int(input("Enter number: "))
+    if n==0:
+        break
+    l1.append(n)
+l3=[]
+for i in l1:
+    l2=[]
+    while i>0:
+        l2.append(i%10)
+        i=i//10
+    g=-1
+    for i in range(0,len(l2)):
+        if g<l2[i]:
+            g=l2[i]
+    l3.append(g)
+for i in l3:
+    n1=(n1*10)+i
+print ("/nNumber from greatest of all numbers: ",n1)

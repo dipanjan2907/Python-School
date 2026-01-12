@@ -1,0 +1,24 @@
+f=open("Story.txt","r")
+l=f.readline()
+while len(l)>0:
+    print(l.strip())
+    l=f.readline()
+f.close()
+
+'''In a world filled with wonder,
+we wander through paths unknown.
+The stars above guide us silently,
+casting light on endless possibilities.
+
+Some dreams take only five words.
+Others are boundless, without end.
+Each day brings new beginnings,
+with hope woven into each sunrise.
+
+Believe in the beauty of change,
+trust the process, even the unknown.
+Courage sometimes means moving forward,
+even when fear tugs at our hearts.
+
+Listen closely to your soulâ€™s whisper.
+Love finds its way, always.'''

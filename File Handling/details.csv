@@ -1,0 +1,18 @@
+import csv
+with open("detail.csv","w") as obj:
+    f=csv.writer(obj)
+    f.writerow(['Roll','Name','Total'])
+    while True:
+        r=int(input("Enter Roll: "))
+        n=input("Enter Name: ")
+        t=int(input("Enter Total Marks: "))
+        f.writerow([r,n,t])
+        ch=int(input("1. Enter More\n2. Exit\n1 or 2?: "))
+        if ch==2:
+            break
+print("\nStudents with marks greater than 75:")
+with open("detail.csv","r") as obj:
+    f=csv.reader(obj)
+    for i in f:
+        if i[2]>75:
+            print(f"{i[0]}, who hold Roll Number {i[1]}, scored {i[2]} marks.")

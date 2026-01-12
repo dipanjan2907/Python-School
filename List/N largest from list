@@ -1,0 +1,10 @@
+l=int(input('Enter limit: '))
+l1=[]
+print("Enter number: ")
+for i in range(0,l):
+    print(i+1,end="")
+    l1.append(int(input(". ")))
+l1=sorted(l1)
+n=int(input("How many largest numbers to show?: "))
+for i in range(l-1,l-n-1,-1):
+    print(l1[i])
