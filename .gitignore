@@ -2,4 +2,5 @@ personal/
 __pycache__/
 *.pyc
 *.pdf
+*.docx
 .vscode/
